@@ -1,0 +1,30 @@
+<% include head.html %>
+
+<h1>this is <%=title%></h1>
+
+<form method="POST" action="/admin/add/newMovie" class="add-form">
+
+    <label for="inputName">电影名</label><span>:</span>
+    <input id="inputName" type="text" name="movie[name]"><br><!--name-->
+    <label for="inputUrl">图片地址</label><span>:</span>
+    <input id="inputUrl" type="text" name="movie[url]"><br><!--url-->
+    <label for="inputDirector">导演</label><span>:</span>
+    <input id="inputDirector" type="text" name="movie[director]"><br><!--director-->
+    <label for="inputAct">主演</label><span>:</span>
+    <input id="inputAct" type="text" name="movie[act]"><br><!--act-->
+    <label for="inputType">类型</label><span>:</span>
+    <input id="inputType" type="text" name="movie[type]"><br><!--type-->
+    <label for="inputCountry">国家</label><span>:</span>
+    <input id="inputCountry" type="text" name="movie[country]"><br><!--country-->
+    <label for="inputLanguage">语言</label><span>:</span>
+    <input id="inputLanguage" type="text" name="movie[language]"><br><!--language-->
+    <label for="inputLong">片长</label><span>:</span>
+    <input id="inputLong" type="text" name="movie[long]"><br><!--long-->
+    <label for="inputAddress">下载地址</label><span>:</span>
+    <input id="inputAddress" type="text" name="movie[address]"><br><!--address-->
+    <label for="inputIntroduce">内容概括</label><span>:</span>
+    <input id="inputIntroduce" type="text" name="movie[introduce]"><br><!--<introduce-->
+    <button type="submit">添加</button>
+</form>
+
+<% include foot.html %>

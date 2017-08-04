@@ -1,0 +1,28 @@
+<% include head.html %>
+
+<h1>this is <%=title%></h1>
+
+<div>
+    <div>
+        <div class="details-title"><%=movie.name%></div>
+        <div class="details-img"><img src="<%=movie.url%>"></div>
+        <div class="details-content">
+            <span>导演:</span><span><%=movie.director%></span><br>
+            <span>主演:</span><span><%=movie.act%></span><br>
+            <span>类型:</span><span><%=movie.type%></span><br>
+            <span>国家:</span><span><%=movie.country%></span><br>
+            <span>语言:</span><span><%=movie.language%></span><br>
+            <span>片长:</span><span><%=movie.long%></span><br>
+        </div>
+    </div>
+    <div class="details-summary">
+        <div class="details-summary-title">电影简介</div>
+        <div class="details-summary-content"><%=movie.introduce%></div>
+    </div>
+    <div class="details-address">
+        <div class="details-address-title">下载地址</div>
+        <div class="details-address-url"><%=movie.address%></div>
+    </div>
+</div>
+
+<% include foot.html %>

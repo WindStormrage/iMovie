@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+.card{
+  height: 500px;
+  width: 300px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 15px #666;
+  overflow: hidden;
+  display: inline-block;
+}
+.card-img{
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+}
+.card-msg{
+  height: 115px;
+  width: 100%;
+}
+.card-foot{
+  height: 35px;
+  width: 100%;
+  border-top: 1px solid #666;
+}
+.card-img img{
+  height: 100%;
+  width: 100%;
+}
+.card-msg-title{
+  height: 40px;
+  width: calc(100% - 10px);
+  padding: 0 5px;
+  line-height: 40px;
+  font-size: 2rem;
+  color: #111;
+  font-family: "Microsoft YaHei";
+}
+.card-msg-content{
+  height: 55px;
+  width: calc(100% - 10px);
+  line-height: 20px;
+  padding: 5px;
+  white-space:normal;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: 1.5rem;
+  color: #222;
+}
+.card-foot span{
+  font-size: 1.5rem;
+  line-height: 35px;
+  float: right;
+  margin-right: 15px;
+}
+.details-title{
+  font-size:5rem;
+  font-family: 黑体;
+  margin: 30px;
+}
+.details-img{
+  display: flex;
+  justify-content: center;
+}
+.details-content{
+  font-size: 2rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.details-content span{
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.details-summary{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.details-summary-title{
+  font-size: 3rem;
+  font-family: 黑体;
+}
+.details-summary-content{
+  font-size: 2rem;
+}
+.details-address{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.details-address-title{
+  font-size: 3rem;
+  font-family: 黑体;
+}
+.details-address-url{
+  font-size: 2rem;
+}
+.add-form{
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+.add-form label{
+  line-height: 35px;
+  width: 85px;
+  display: inline-block;
+  text-align: left;
+}
+.add-form input{
+  width: 30%;
+}
+.add-form button{
+  margin-top: 20px;
+  height: 50px;
+  width: 130px;
+  font-size: 3rem;
+}

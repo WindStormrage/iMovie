@@ -1,0 +1,20 @@
+<% include head.html %>
+
+<h1>this is <%=title%></h1>
+<%for(var i=0; i < movies.length; i++){var movie=movies[i];%>
+<a href="/movie/<%=movie._id%>">
+    <div class="card">
+        <div class="card-img"><img src="<%=movie.url%>"></div>
+        <div class="card-msg">
+            <div class="card-msg-title"><%=movie.name%></div>
+            <div class="card-msg-content"><%=movie.introduce%></div>
+        </div>
+        <div class="card-foot">
+            <span><%=movie.type%></span>
+            <span><%=movie.people%></span>
+            <span><%=movie.date%></span>
+        </div>
+    </div>
+</a>
+<%}%>
+<% include foot.html %>
